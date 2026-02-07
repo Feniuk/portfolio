@@ -35,22 +35,80 @@ body::after {
   border-bottom-left-radius: 40px;
 }
 
+body.dark {
+  background: linear-gradient(to right, #121212, #1e1e1e);
+}
+
+.header {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 30px;
+  margin-bottom: 50px;
+}
+
 .title {
   font-size: 64px;
   color: #2e86de;
   text-align: center;
   margin-bottom: 50px;
+  margin-top: 30px;
   animation: fadeInDown 1s ease-out;
+}
+
+.theme_btn {
+  position: absolute;
+  right: 40px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 100px;
+  height: 40px;
+  cursor: pointer;
+  margin-right: 300px;
+}
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 8px 18px;
+  border-radius: 30px;
+  font-size: 18px;
+  font-weight: 500;
+  font-family: inherit;
+  color: #fff;
+  background-color: #a217f3;
+  border: none;
+  text-decoration: none;
+  cursor: pointer;
+  transition:
+    background-color 0.3s ease,
+    transform 0.2s ease;
+}
+
+.btn:hover {
+  background-color: #1b4f72;
+  transform: translateY(-50%) scale(1.05);
+}
+
+.project_wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
 }
 
 .project {
   background-color: #fff;
   padding: 30px;
-  margin: 30px auto;
-  max-width: 800px;
+  margin-top: 0;
+  margin-bottom: 20px;
+  margin-left: 80px;
+  max-width: 700px;
   border-radius: 15px;
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
 }
 
 .project:hover {
@@ -100,7 +158,9 @@ body::after {
   border-radius: 30px;
   text-decoration: none;
   font-weight: 500;
-  transition: background-color 0.3s ease, transform 0.2s ease;
+  transition:
+    background-color 0.3s ease,
+    transform 0.2s ease;
 }
 
 .links a:hover {
