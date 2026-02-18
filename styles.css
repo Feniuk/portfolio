@@ -36,7 +36,7 @@ body::after {
 }
 
 body.dark {
-  background: linear-gradient(to right, #121212, #1e1e1e);
+  background: linear-gradient(to right, #000, #000);
 }
 
 .header {
@@ -66,6 +66,19 @@ body.dark {
   height: 40px;
   cursor: pointer;
   margin-right: 300px;
+  border-radius: 30px;
+}
+
+.language_btn {
+  position: absolute;
+  right: 40px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 60px;
+  height: 40px;
+  cursor: pointer;
+  margin-right: 180px;
+  border-radius: 5px;
 }
 
 .btn {
@@ -73,7 +86,6 @@ body.dark {
   align-items: center;
   justify-content: center;
   padding: 8px 18px;
-  border-radius: 30px;
   font-size: 18px;
   font-weight: 500;
   font-family: inherit;
@@ -222,4 +234,41 @@ body.dark {
   100% {
     transform: translateX(-50%);
   }
+}
+
+body.dark::before,
+body.dark::after {
+  background: #000;
+  opacity: 1;
+}
+
+body.dark .project {
+  background-color: #111827;
+}
+
+body.dark .subtitle {
+  color: #2e86de;
+}
+
+body.dark .text {
+  color: #2e86de;
+}
+
+body.dark .project a {
+  color: #2e86de;
+}
+
+body.dark .project a:hover {
+  color: #60a5fa;
+  border-bottom-color: #60a5fa;
+}
+
+body.dark .btn,
+body.dark .links a {
+  background-color: #2e86de;
+}
+
+body.dark .btn:hover,
+body.dark .links a:hover {
+  background-color: #1e40af;
 }
