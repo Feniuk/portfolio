@@ -1,9 +1,9 @@
 const theme_button = document.getElementById("theme_btn");
-const laguage_button = document.getElementById("language_btn");
+const language_button = document.getElementById("language_btn");
 let currentLanguage = "en";
 
 theme_button.addEventListener("click", switch_function);
-laguage_button.addEventListener("click", switch_laguage);
+language_button.addEventListener("click", switch_language);
 
 function switch_function() {
   document.body.classList.toggle("dark");
@@ -14,13 +14,13 @@ function switch_function() {
   }
 }
 
-function switch_laguage() {
+function switch_language() {
   if (currentLanguage === "en") {
     currentLanguage = "de";
   } else {
     currentLanguage = "en";
   }
-  laguage_button.textContent = currentLanguage === "en" ? "DE" : "EN";
+  language_button.textContent = currentLanguage === "en" ? "DE" : "EN";
   applyLanguage(currentLanguage);
 }
 
