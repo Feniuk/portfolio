@@ -39,7 +39,6 @@ watch(isDark, (newValue) => {
       </svg>
     </div>
 
-    <!-- Header -->
     <header class="header">
       <h1 class="title">{{ t.title }}</h1>
 
@@ -52,7 +51,6 @@ watch(isDark, (newValue) => {
       </button>
     </header>
 
-    <!-- Projects -->
     <div class="project_wrapper">
       <div class="project">
         <h2 class="subtitle">{{ t.bookshelf_title }}</h2>
